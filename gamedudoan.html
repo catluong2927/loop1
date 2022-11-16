@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAME DỰ ĐOÁN</title>
+</head>
+<body>
+<button onclick="button()">START</button>
+<script>
+    function button() {
+        let a = +prompt("số bạn muốn đoán nằm trong khoản: ");
+        let ranDom = Math.floor(Math.random() * a);
+        console.log(ranDom);
+        let b;
+        for (let i = 1; i <4;i++) {
+            let count=i;
+            b = +prompt("số bạn đoán là: ");
+            if (b == ranDom) {
+                alert("chúc mừng bạn đã đoán đúng");
+                break;
+            } else if (b > ranDom) {
+                    alert("số bạn đoán lớn hơn rồi");
+                    console.log(ranDom)
+                } else {
+                alert("số bạn đoán nhỏ hơn rồi");
+                console.log(ranDom)
+                }
+            if(count == 3) alert("bạn đã hết lượt");
+
+        }
+    }
+</script>
+</body>
+</html>

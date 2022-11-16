@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibodivi5</title>
+</head>
+<body>
+<script>
+  let fi=1;
+  let a=0;
+  let b
+  for (let i=0;i<20;i++){
+    let b=fi;
+    fi=fi+a;
+    if (fi%5==0) {
+      document.write("số fibo đầu tiên chia hết cho 5 là: "+fi);
+      break;
+    }
+    a=b;
+  }
+</script>
+</body>
+</html>
